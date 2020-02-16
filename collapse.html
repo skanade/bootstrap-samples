@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="./bootstrap-4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="./bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
+<script>
+</script>
+
+</head>
+<body>
+<p>
+  <a href="#collapse1" class="btn btn-secondary" role="button" data-toggle="collapse" aria-controls="collapse1" aria-expanded="false">click to expand content</a>
+</p>
+<div class="collapse contents" id="collapse1">
+  <div class="card card-body">
+  Some detailed content, that is displayed when the button above is clicked.
+  </div>
+</div>
+
+<p>
+  <button data-target="#collapse2" class="btn btn-secondary" data-toggle="collapse" aria-controls="collapse2" aria-expanded="false">click to expand content</button>
+</p>
+<div class="collapse contents" id="collapse2">
+  <div class="card card-body">
+  Some detailed content, that is displayed when the button above is clicked.
+  </div>
+</div>
+<br/>
+<p>
+  <button class="btn btn-secondary" type="button" data-toggle="collapse" aria-controls="collapse1 collapse2" aria-expanded="false" data-target=".contents">click to expand both content</button>
+</p>
+
+</body>
+</html>

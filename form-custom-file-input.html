@@ -9,18 +9,24 @@
 <script src="./bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
 <script>
 </script>
+<style>
+.custom-file-input:lang(ja) {
+  content: "参照";
+}
+</style>
 
 </head>
 <body>
 
 <form>
   <div class="form-group">
-    <label for="formControlRange">Range Input</label>
-    <input type="range" class="form-control-range" id="formControlRange">
+    <label for="file1">Select File</label>
+    <input type="file" class="form-control-file" id="file1"/>
   </div>
-  <div class="form-group">
-    <label for="formCustomControlRange">Range Input</label>
-    <input type="range" class="custom-range" min="0" max="5" id="formCustomControlRange">
+  <div class="custom-file">
+    <!-- lang="ja" css style not working -->
+    <input type="file" class="custom-file-input" id="file2" lang="ja"/>
+    <label for="file2" class="custom-file-label">Select File</label>
   </div>
 </form>
 
