@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="./bootstrap-4.3.1/css/bootstrap.min.css">
+<script src="./bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+<!-- text-truncate does not work -->
+<div class="container">
+  <p class="text-truncate w-10">Truncate this text as we don't need to read the entire description</p>
+  <p class="text-lowercase">Lowercase This Text</p>
+  <p class="text-uppercase">uppercase this text</p>
+  <p class="text-capitalize">capitalize this text</p>
+</div>
+<br/>
+
+<table class="table">
+    <thead>
+        <tr class="table-primary">
+            <th class="text-nowrap" scope="col">Do not want to wrap this column</th>
+            <th scope="col">These columns can be wrapped</th>
+            <th class="text-truncate w-10" scope="col">Truncate this column even though this column can be wrapped</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="text-nowrap" scope="col">Do not want to wrap this column value</td>
+            <td scope="col">These columns values can be wrapped</th>
+            <td class="text-truncate w-10" scope="col">Truncate this column even though this column can be wrapped</th>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
